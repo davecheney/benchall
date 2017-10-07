@@ -27,8 +27,7 @@ At the end of the run `benchall.bash` will run `benchstat` to compare the result
 ```
 % benchstat go1.9.txt go.tip.txt 
 name    old time/op  new time/op  delta
-Juju-4   74.8s ± 2%   73.0s ± 5%  -2.48%  (p=0.011 n=10+10)
-Kube-4   54.6s ± 6%   54.1s ± 5%    ~      (p=0.497 n=9+10)
-Gogs-4   17.0s ±14%   16.4s ±13%    ~     (p=0.143 n=10+10)
-```
-In this sample, the variances between runs are too high, ±2% is acceptable, ±5% is too noisy, and ±14% is unacceptable.
+Juju-4   65.5s ± 1%   63.4s ± 1%  -3.21%  (p=0.000 n=20+20)
+Kube-4   47.6s ± 2%   46.7s ± 1%  -1.72%  (p=0.000 n=18+20)
+Gogs-4   14.7s ± 2%   14.3s ± 2%  -3.03%  (p=0.000 n=20+20)
+
