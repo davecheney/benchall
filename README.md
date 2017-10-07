@@ -1,8 +1,8 @@
-= Benchall
+# Benchall
 
 A small test harness for benchmarking the compile speed improvements from Go 1.9 to tip as a standard `testing.B`.
 
-== Prerequisites
+## Prerequisites
 
 `benchall.bash` requires Go 1.9 and Go built from tip to be installed. The respective `go` commands should be in your path as such
 ```
@@ -16,7 +16,7 @@ lrwxrwxrwx 1 dfc dfc 12 Mar 15  2017 /home/dfc/bin/go.tip -> ../go/bin/go
 % go get -u golang.org/x/perf/cmd/benchstat
 ```
 `benchall.bash` will attempt to check that all the prerequisites are installed.
-== Execution
+## Execution
 `benchall.bash` runs 10 rounds of each benchmark, twice with Go 1.9 and twice with tip. Only the second pass of each compiler is kept. This is intended to avoid the effects of processor scaling.
 ```
 % bash benchall.bash
